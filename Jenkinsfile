@@ -13,7 +13,7 @@ pipeline {
 			}
 			stage ('Intigration_testing'){
 				steps{
-					echo "intigration testing"
+					echo "Intigration testing"
 				}
 			}
 		}
