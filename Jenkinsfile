@@ -17,6 +17,8 @@ pipeline {
 				}
 			}
 		}
+		post{
+
 		failure{
 			echo "i got failed"
 		}
@@ -28,6 +30,7 @@ pipeline {
 		}
 		always{
 			echo "i am Awesome"
+		}
 		}
 
 }
