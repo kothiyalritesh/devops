@@ -1,39 +1,39 @@
 pipeline {
-	agent any
-	// agent { docker { image 'maven:3.6.3'} }
+	//agent any
+ agent { docker { image 'maven:3.6.3 '} }
 
 		stages{
 			stage ('Build'){
 				steps{
-					sh "mvn --version"
+					sh 'mvn --version'
 					echo "Build"
 				}
 			}
-			stage ('Test'){
-				steps{
-					echo "testing"
-				}
-			}
-			stage ('Intigration_testing'){
-				steps{
-					echo "Intigration testing"
-				}
-			}
+			// stage ('Test'){
+			// 	steps{
+			// 		echo "testing"
+			// 	}
+			// }
+			// stage ('Intigration_testing'){
+			// 	steps{
+			// 		echo "Intigration testing"
+			// 	}
+			// }
 		}
-		post{
+		// post{
 
-		failure{
-			echo "i got failed"
-		}
-		success{
-			echo "i got succed"
-		}
-		{
-			echo "i got failed"
-		}
-		always{
-			echo "i am Awesome"
-		}
-		}
+		// failure{
+		// 	echo "i got failed"
+		// }
+		// success{
+		// 	echo "i got succed"
+		// }
+		// {
+		// 	echo "i got failed"
+		// }
+		// always{
+		// 	echo "i am Awesome"
+		// }
+		// }
 
 }
