@@ -8,6 +8,10 @@ pipeline {
 				steps {
 					//sh 'mvn --version'
 					echo "build"
+					echo "$PATH"
+					echo "BUILD_NUMBER - $env.BUILD_NUMBER"
+					echo "BUILD_ID - $enx.BUILD_ID"
+
 				}
 			}
 		}
