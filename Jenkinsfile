@@ -1,5 +1,5 @@
 pipeline {
-	//agent any
+	agent any
 // agent { docker { image 'maven:3.8.7'}
   }
 
@@ -11,7 +11,7 @@ pipeline {
 				}
 			}
 		}
-}
+
 			// stage ('Test'){
 			// 	steps{
 			// 		echo "testing"
